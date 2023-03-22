@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>...The Calc App...</h1> 
+    <hr>
+    <br>
+    <br>
+    <div id="middle">
+        <div id="calculator">  
+            <Input type="text" placeholder="0" id="display"/>
+            <div id="container2">
+                <button class="btn btn2 clacBtn2" onclick="display.value=(display.value).slice(0,(display.value).length-1)">delete</button>
+                <button class="btn btn2 clacBtn2" onclick="addCalculations(); display.value=eval(display.value)">=</button>
+            </div>
+            <div id="container2">
+                <button class="btn" id="num" onclick="display.value+='7'" >7</button>
+                <button class="btn" id="num" onclick="display.value+='8'">8</button>
+                <button class="btn" id="num" onclick="display.value+='9'">9</button>
+                <button class="btn clacBtn" onclick="display.value+='+'">+</button>
+            </div>
+            <div id="container2">
+                <button class="btn" id="num" onclick="display.value+='4'">4</button>
+                <button class="btn" id="num" onclick="display.value+='5'">5</button>
+                <button class="btn" id="num" onclick="display.value+='6'">6</button>
+                <button class="btn clacBtn" onclick="display.value+='-'">-</button>
+            </div>
+            <div id="container2">
+                <button class="btn" id="num" onclick="display.value+='1'">1</button>
+                <button class="btn" id="num" onclick="display.value+='2'">2</button>
+                <button class="btn" id="num" onclick="display.value+='3'">3</button>
+                <button class="btn clacBtn" onclick="display.value+='*'">*</button>
+            </div>
+            <div id="container2">
+                <button class="btn" id="num" onclick="display.value+='0'">0</button>
+                <button class="btn clacBtn" onclick="display.value+='%'">%</button>
+                <button class="btn clacBtn" onclick="display.value+='.'">.</button>
+                <button class="btn clacBtn" onclick="display.value+='/'">/</button>
+            </div>
+            <div id="container2">
+                <button class="btn btn2 clacBtn2" onclick="display.value=''">C</button>
+                <button class="btn btn2 clacBtn2" onclick="display.value=eval(display.value); showCalculations()">history</button>
+            </div>
+        </div>
+        <div id="history">
+            <h2>History</h2>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+    <script>
+        historyList=[];
+        const addCalculations=()=>{
+            if(eval(display.value)!=undefined)
+                historyList.push(`${display.value}=${eval(display.value)}`);
+        }
+
+        const showCalculations=()=>{
+            document.getElementById("historyList").innerHTML=``;
+            for(let i=0;i<historyList.length;i++){      
+                document.getElementById("historyList").innerHTML+=
+                    `<li>${historyList[historyList.length-1-i]}</li><br>`;
+            }
+        }
+    </script>
+</body>
+</html>

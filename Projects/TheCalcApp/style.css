@@ -1,0 +1,123 @@
+*{
+    font-size: 20px;
+    background-color: rgb(189, 185, 185);
+    font-family: 'Roboto', sans-serif;
+}
+
+#middle{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    column-gap: 10rem;
+}
+
+#calculator{
+    display:flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items:center;
+    justify-content:center;
+    width:15rem;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    background-color: #ccc;
+    padding:10px;
+    padding-bottom: 10px;
+}
+
+#container2{
+    display:flex;
+    flex-direction: row;
+    column-gap: 5px;
+    align-items:center;
+    justify-content:center;
+    background-color: #ccc;
+}
+
+#history{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:flex-start;
+    background-color: #ccc;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    width:15rem;
+    
+}
+
+#historyList{
+    height:15rem;
+    overflow: scroll;
+    background-color: #ccc;
+}
+
+li{ 
+    background-color: #ccc;
+    color:rgb(100, 100, 100);
+    margin-right:2rem;
+
+}
+
+h1{
+    color:white;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2{
+    color:white;
+    font-size: 40px;
+    text-align: center;
+    background-color: #ccc;
+}
+
+hr{
+    border:5px solid #ccc;
+}
+
+.btn{
+    background-color: black;
+    width:50px;
+    height:50px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color:white;
+}
+
+.btn:hover{
+    background-color: rgb(51, 50, 50);
+}
+
+
+.btn2{
+    width:105px;
+}
+
+.clacBtn{
+    background-color: rgb(255, 166, 0);
+}
+
+.clacBtn:hover{
+    background-color: rgb(245, 192, 93);
+}
+
+.clacBtn2{
+    background-color: rgb(8, 98, 139);
+}
+
+.clacBtn2:hover{
+    background-color: rgb(51, 145, 189);
+}
+
+input{
+    text-align: right;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+li{
+    list-style-type:none
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>MiniProject</title>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            <input type="radio" name="radio-btn" id="radio5" />
+            <div class="slide first slideContainer">
+                <div class="leftContainer">
+                    <h1>Mini Project</h1>
+                    <p style="margin-top: -20px; color:#c78deecc">(by shachi)</p>
+                    <p>Mini Project is made up of 4 projects - The Calc App, The Clock App, The Note App and The weather App.</p>
+                    <p>All the projects in this Mini Project was built in HTML, CSS and Javascript</p>
+                    <p>Projects 👉</p>
+                    <button id="minProj-SrcBtn">
+                        <a href="https://github.com/Shachi-Priya/MiniProject">
+                            Source Code
+                        </a>
+                    </button>
+                </div>
+                <div class="rightContainer">
+                    <img id="allImg" src="./images/allinone.png" alt="all">
+                </div>
+            </div>
+            <div class="slide slideContainer">
+                <div class="leftContainer">
+                    <h2>Project1 : The Calc App</h2>
+                    <p>The caculator which performs basic mathematical calculations with history saving functionality.</p>
+                    <div>
+                        <button id="Proj1-PojBtn">
+                            <a href="./Projects/TheCalcApp/index.html">
+                                View Project
+                            </a>
+                        </button>
+                        <button id="Proj1-SrcBtn">
+                            <a href="https://github.com/Shachi-Priya/TheCalcApp">
+                                Source Code
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="rightContainer">
+                    <img id="img1" src="./images/calc.png" alt="calc">
+                </div>
+            </div>
+            <div class="slide slideContainer">
+                <div class="leftContainer">
+                    <h2>Project2 - The Clock App</h2>
+                    <p>The clock which shows current running time through analog clock on the click of start button and stops whenever the stop button clicked.</p>
+                    <div>
+                        <button id="Proj2-PojBtn">
+                            <a href="./Projects/TheClockApp/index.html">
+                                View Project
+                            </a>
+                        </button>
+                        <button id="Proj2-SrcBtn">
+                            <a href="https://github.com/Shachi-Priya/TheClockApp">
+                                Source Code
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="rightContainer">
+                    <img id="img2" src="./images/clock.png" alt="clock">
+                </div>
+            </div>
+            <div class="slide slideContainer">
+                <div class="leftContainer">
+                    <h2>Project3 - The Note App</h2>
+                    <p>The Note App in which we can write our notes with their titles and that will save according to stack property(LIFO) in local storage.</p>
+                    <div>
+                        <button id="Proj3-PojBtn">
+                            <a href="./Projects/TheNoteApp/index.html">
+                                View Project
+                            </a>
+                        </button>
+                        <button id="Proj3-SrcBtn">
+                            <a href="https://github.com/Shachi-Priya/TheNoteApp">
+                                Source Code
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="rightContainer">
+                    <img id="img3" src="./images/note.png" alt="note">
+                </div>
+            </div>
+            <div class="slide slideContainer">
+                <div class="leftContainer">
+                    <h2>Project4 - The Weather App</h2>
+                    <p>The Weather App which shows current weather, some upcoming weather of the day and weather of next 4 days of any city in the World which is fetched from Open Weather Map API.</p>
+                    <div>
+                        <button id="Proj4-PojBtn">
+                            <a href="./Projects/TheWeatherApp/index.html">
+                                View Project
+                            </a>
+                        </button>
+                        <button id="Proj4-SrcBtn">
+                            <a href="https://github.com/Shachi-Priya/TheWeatherApp">
+                                Source Code
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="rightContainer">
+                    <img id="img4" src="./images/weather.png" alt="weather">
+                </div>
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
+            <div class="navigation-manual">
+                <label class="manual-btn" for="radio1"></label>
+                <label class="manual-btn" for="radio2"></label>
+                <label class="manual-btn" for="radio3"></label>
+                <label class="manual-btn" for="radio4"></label>
+                <label class="manual-btn" for="radio5"></label>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
